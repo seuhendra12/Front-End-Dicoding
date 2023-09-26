@@ -1,3 +1,6 @@
+body {
+  font-family: sans-serif;
+}
 .shadowbox {
   width: 15em;
   border: 1px solid #333;
@@ -10,4 +13,12 @@
 }
 .bahan {
   color: red;
+}
+h2,h3 {
+  color: #00a2c6;
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
 }
