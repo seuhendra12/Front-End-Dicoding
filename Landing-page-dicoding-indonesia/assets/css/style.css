@@ -32,14 +32,14 @@ header.navbar-container .logo img {
 }
 
 /* membuat tautan navigasi menggunakan flexbox */
-header.navbar-container .nav-list ul{
+header.navbar-container .nav-list ul {
   padding-left: 0;
   display: flex;
   justify-content: center;
   gap: 2rem 1rem;
 }
 
-header.navbar-container .nav-list li{
+header.navbar-container .nav-list li {
   list-style-type: none;
 }
 
@@ -48,9 +48,9 @@ header.navbar-container .nav-list li a {
   font-size: 1.05rem;
   font-weight: 500;
   color: black;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 999px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 header.navbar-container .nav-list li:hover a {
@@ -91,24 +91,24 @@ main .content .content-description p {
 }
 
 main .content .content-description button {
-  padding: .8rem 2.5rem;
+  padding: 0.8rem 2.5rem;
   margin-block-start: 1rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: white;
 
   border: 3px solid transparent;
   border-radius: 999px;
-  background-color: #2D3E50;
+  background-color: #2d3e50;
   cursor: pointer;
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 main .content .content-description button:hover {
-  border: 3px solid #2D3E50;
-  color: #2D3E50;
+  border: 3px solid #2d3e50;
+  color: #2d3e50;
   background-color: transparent;
 }
 
@@ -140,7 +140,7 @@ main aside .social-media ul {
   margin: auto;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  background-color: #2D3E50;
+  background-color: #2d3e50;
 
   display: flex;
   flex-flow: column nowrap;
@@ -157,9 +157,42 @@ main aside .social-media li a {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-  transition: all .1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 main aside .social-media li a:hover {
   color: #89b0d9;
+}
+
+/* Halaman Responsif dibawah 768px*/
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
 }
